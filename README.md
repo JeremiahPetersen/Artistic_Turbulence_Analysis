@@ -16,4 +16,39 @@ The project is based on the insights provided by the paper "Turbulent luminance 
 ## Installation
 Clone this repository to your local machine using:
 ```bash
-git clone https://github.com/yourusername/artistic-turbulence-analysis.git
+git clone https://github.com/JeremiahPetersen/artistic-turbulence-analysis.git
+```
+
+## Requirements
+This script requires Python 3.x along with the following libraries:
+
+- NumPy
+- PIL (Pillow)
+- Matplotlib
+- SciPy
+
+You can install all required libraries using:
+```bash
+pip install numpy pillow matplotlib scipy
+```
+
+## Usage
+To run the script, navigate to the cloned directory and execute:
+```bash
+Turbulent_Luminance_Analysis.py
+```
+
+## Example
+Below is an example of how to use the script to analyze two different images:
+
+- Load the images.
+- Convert the images to luminance.
+- Calculate luminance differences.
+- Apply statistical analysis.
+- Plot the results.
+
+Detailed documentation and function descriptions are available within the script.
+
+## Acknowledgments
+- This project was inspired by the research published in [arXiv/0606246v2](https://www.arxiv.org/abs/physics/0606246).
+
