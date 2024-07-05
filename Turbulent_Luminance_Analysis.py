@@ -56,26 +56,27 @@ def plot_pdf(differences_dict, scales):
     plt.legend()
     plt.show()
 
-def compare_painting_statistics(stats1, stats2):
+def compare_painting_statistics(moments1, moments2):
     results = {}
-    for n in stats1:
-        t_stat, p_value = ttest_ind(stats1[n], stats2[n])
-        results[n] = {'t_stat': t_stat, 'p_value': p_value}
+    for n in moments1:
+        t_stat, p_value = ttest_ind(moments1[n], moments2[n])
+        results[n] = {'Painting 1': moments1[n], 'Painting 2': moments2[n], 't_stat': t_stat, 'p_value': p_value}
     return results
 
 def plot_comparative_statistics(stats):
     fig, ax = plt.subplots(len(stats), 1, figsize=(10, 8))
     for i, n in enumerate(sorted(stats.keys())):
-        ax[i].bar(['Painting 1', 'Painting 2'], [np.mean(stats[n]['Painting 1']), np.mean(stats[n]['Painting 2'])], yerr=[np.std(stats[n]['Painting 1']), np.std(stats[n]['Painting 2'])])
+        means = [np.mean(stats[n]['Painting 1']), np.mean(stats[n]['Painting 2'])]
+        stds = [np.std(stats[n]['Painting 1']), np.std(stats[n]['Painting 2'])]
+        ax[i].bar(['Painting 1', 'Painting 2'], means, yerr=stds)
         ax[i].set_title(f'Moment {n} Comparison')
         ax[i].set_ylabel('Moment Value')
     plt.tight_layout()
     plt.show()
 
 def main():
-    # LOAD AND PROCESS TWO IMAGES FOR COMPARISON
-    image_path1 = 'path_to_your_image1.jpg'
-    image_path2 = 'path_to_your_image2.jpg'
+    image_path1 = 'starrynight.jpg'
+    image_path2 = 'pe3albumcover.jpg'
     scales = [1, 2, 5, 10, 20]
     
     luminance_matrix1 = load_and_convert_to_luminance(image_path1)
