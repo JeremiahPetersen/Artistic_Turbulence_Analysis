@@ -4,7 +4,7 @@
 This project aims to analyze the turbulence-like characteristics in paintings, specifically focusing on luminance variations within artworks. Inspired by the research that applied Kolmogorov's turbulence theories to Van Gogh's paintings, this script provides tools to examine how the distribution of luminance can reflect turbulent patterns similar to those observed in fluid dynamics.
 
 ## Motivation
-The project is based on the insights provided by the paper "Turbulent luminance in impassioned van Gogh paintings," which explores the analogy between the chaotic patterns in Van Gogh’s artworks and the statistical models of turbulence in fluid dynamics.  This project references the paper "Turbulent luminance in impassioned van Gogh paintings" located here: https://www.arxiv.org/abs/physics/0606246
+The project is based on the insights provided by the paper "Turbulent luminance in impassioned van Gogh paintings," which explores the analogy between the chaotic patterns in Van Gogh’s artworks and the statistical models of turbulence in fluid dynamics.  (located here:) https://www.arxiv.org/abs/physics/0606246
 
 ## Features
 - **Luminance Conversion**: Converts digital images of paintings into luminance data.
