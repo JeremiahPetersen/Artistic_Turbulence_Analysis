@@ -14,10 +14,7 @@ The project is based on the insights provided by the paper "Turbulent luminance 
 - **Statistical Comparison**: Compares the turbulence characteristics between different paintings using statistical tests.
 
 ## Installation
-Clone this repository to your local machine using:
-```bash
-git clone https://github.com/JeremiahPetersen/artistic-turbulence-analysis.git
-```
+Clone this repository to your local machine
 
 ## Requirements
 This script requires Python 3.x along with the following libraries:
