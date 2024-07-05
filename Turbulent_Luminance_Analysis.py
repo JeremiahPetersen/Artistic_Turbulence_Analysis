@@ -75,8 +75,8 @@ def plot_comparative_statistics(stats):
     plt.show()
 
 def main():
-    image_path1 = 'starrynight.jpg'
-    image_path2 = 'pe3albumcover.jpg'
+    image_path1 = 'image1.jpg'
+    image_path2 = 'image2.jpg'
     scales = [1, 2, 5, 10, 20]
     
     luminance_matrix1 = load_and_convert_to_luminance(image_path1)
